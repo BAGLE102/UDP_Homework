@@ -82,30 +82,7 @@ Key system calls and their purposes:
 > Each `sendto()` corresponds to a complete, independent datagram.
 
 ---
-
-## 6. Example Execution
-
-**Server Output:**
-
-```
-[SERVER] UDP echo listening on 0.0.0.0:9999
-[SERVER] receive (5 bytes) from 127.0.0.1:48612
-[SERVER] reply   (5 bytes) to   127.0.0.1:48612
-```
-
-**Client Output:**
-
-```
-[CLIENT] UDP echo to 127.0.0.1:9999
-Enter UDP msg (Ctrl+D to quit):
-Hi
-[CLIENT] Receive (5 bytes) from 127.0.0.1:9999
-From Server: Hi
-```
-
----
-
-## 7. Results
+## 6. Results
 
 🖼️ **Server-side result:**
 ![Server Result](https://raw.githubusercontent.com/BAGLE102/UDP_Homework/main/Server.png)
@@ -118,33 +95,4 @@ From Server: Hi
 
 ---
 
-## 8. Wireshark Observation
 
-To capture the UDP packets exchanged between the client and server:
-
-* If both programs run on the same machine, select **Loopback: lo** as the interface.
-* Set **Capture Filter** to:
-
-  ```
-  udp port 9999
-  ```
-* If testing between two different hosts, choose the appropriate physical interface (e.g., `enp0s31f6`).
-
-You should observe packets similar to the following:
-
-| Source IP       | Destination IP  | Protocol | Length | Info         |
-| --------------- | --------------- | -------- | ------ | ------------ |
-| 192.168.118.141 | 192.168.118.144 | UDP      | 60     | 58668 → 9999 |
-| 192.168.118.144 | 192.168.118.141 | UDP      | 1066   | 9999 → 58668 |
-
----
-
-## 9. Notes
-
-* UDP does **not guarantee delivery or order**, but it is lightweight and fast for simple message exchanges.
-* Each datagram is independent — lost packets are not retransmitted automatically.
-* This project demonstrates basic UDP socket usage and packet inspection using Wireshark.
-
----
-
-Would you like me to also produce this as a **ready-to-submit PDF version (`614430005_Readme.pdf`)** with your name and screenshot placeholders (for server, client, and Wireshark)?
