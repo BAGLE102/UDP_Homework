@@ -108,15 +108,19 @@ From Server: Hi
 ## 7. Results
 
 **Server Output:** 
+
 <img src="https://raw.githubusercontent.com/BAGLE102/UDP_Homework/main/UDP_Server.png" width="700"/>
 
 **Client Output:**
+
 <img src="https://raw.githubusercontent.com/BAGLE102/UDP_Homework/main/UDP_Client.png" width="700"/>
 
 **Wireshark Capture:** 
+
 <img src="https://raw.githubusercontent.com/BAGLE102/UDP_Homework/main/UDP_WireShark.png" width="700"/>
 
 **Wireshark Data Detail:**
+
 <img src="https://raw.githubusercontent.com/BAGLE102/UDP_Homework/main/UDP_data.png" width="700"/>
 
 ---
