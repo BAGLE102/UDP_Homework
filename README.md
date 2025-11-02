@@ -85,14 +85,15 @@ Key system calls and their purposes:
 ## 6. Results
 
 🖼️ **Server-side result:**
-![Server Result](https://raw.githubusercontent.com/BAGLE102/UDP_Homework/main/Server.png)
+![Server Result](https://github.com/BAGLE102/UDP_Homework/blob/main/UDP_Server.png)
 
 🖼️ **Client-side result:**
-![Client Result](https://raw.githubusercontent.com/BAGLE102/UDP_Homework/main/Client.png)
+![Client Result](https://github.com/BAGLE102/UDP_Homework/blob/main/UDP_Client.png)
 
 🖼️ **Wireshark capture:**
-![Wireshark Result](https://raw.githubusercontent.com/BAGLE102/UDP_Homework/main/Wireshark.png)
+![Wireshark Result](https://github.com/BAGLE102/UDP_Homework/blob/main/UDP_WireShark.png)
 
+![Wireshark Result](https://github.com/BAGLE102/UDP_Homework/blob/main/UDP_data.png)
 ---
 
 
