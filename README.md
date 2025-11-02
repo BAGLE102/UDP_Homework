@@ -107,42 +107,21 @@ From Server: Hi
 
 ## 7. Results
 
-**Server Output:** <img src="https://raw.githubusercontent.com/BAGLE102/UDP_Homework/main/UDP_Server.png" width="700"/>
+**Server Output:** 
+<img src="https://raw.githubusercontent.com/BAGLE102/UDP_Homework/main/UDP_Server.png" width="700"/>
 
-**Client Output:** <img src="https://raw.githubusercontent.com/BAGLE102/UDP_Homework/main/UDP_Client.png" width="700"/>
+**Client Output:**
+<img src="https://raw.githubusercontent.com/BAGLE102/UDP_Homework/main/UDP_Client.png" width="700"/>
 
-**Wireshark Capture:** <img src="https://raw.githubusercontent.com/BAGLE102/UDP_Homework/main/UDP_WireShark.png" width="700"/>
+**Wireshark Capture:** 
+<img src="https://raw.githubusercontent.com/BAGLE102/UDP_Homework/main/UDP_WireShark.png" width="700"/>
 
-**Wireshark Data Detail:** <img src="https://raw.githubusercontent.com/BAGLE102/UDP_Homework/main/UDP_data.png" width="700"/>
+**Wireshark Data Detail:**
+<img src="https://raw.githubusercontent.com/BAGLE102/UDP_Homework/main/UDP_data.png" width="700"/>
 
 ---
 
-## 8. Wireshark Observation
 
-To capture UDP packets exchanged between the client and server:
-
-1. If both programs run on the same machine, select **Loopback: lo** as the capture interface.
-2. Set the **Capture Filter** to:
-
-   ```
-   udp port 9999
-   ```
-3. If testing between two hosts, choose the correct physical interface (e.g., `enp0s31f6`).
-
-Example captured packets:
-
-| Source IP       | Destination IP  | Protocol | Length | Info         |
-| --------------- | --------------- | -------- | ------ | ------------ |
-| 192.168.118.141 | 192.168.118.144 | UDP      | 60     | 58668 → 9999 |
-| 192.168.118.144 | 192.168.118.141 | UDP      | 1066   | 9999 → 58668 |
-
-**Wireshark Hex Data Example:**
-
-```text
-0000  00 03 04 06 00 00 00 00  51 3e 08 00 45 00 00 22
-0010  88 66 40 00 40 11 cb 71  c0 a8 32 d1 92 38 27 0f
-0020  00 0e e7 12 68 65 6c 6c  6f 0a
-```
 
 
 
